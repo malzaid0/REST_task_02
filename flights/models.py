@@ -19,5 +19,5 @@ class Booking(models.Model):
 	passengers = models.PositiveIntegerField()
 
 	def __str__(self):
-		return "%s: %s" % (self.user.username, str(self.flight))
+		return str(self.id)+"%s: %s" % (self.user.username, str(self.flight))
 
